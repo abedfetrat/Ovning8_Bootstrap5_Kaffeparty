@@ -1,0 +1,24 @@
+/* $primary: #A76C3A;
+$secondary: #C48550;
+$light: #D2A075;
+$dark: #3f2b1b;
+
+$body-bg: #fae5d2;
+$body-color: #815f43;
+$body-emphasis-color: #3f2b1b; */
+
+$dark: #492f1c;
+
+$body-bg: #e2c8b5;
+$body-color: #492f1c;
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
