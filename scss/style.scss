@@ -67,4 +67,9 @@ $body-emphasis-color: #23190d;
   backdrop-filter: blur(3px);
 }
 
+html,
+body {
+  height: 100%;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
