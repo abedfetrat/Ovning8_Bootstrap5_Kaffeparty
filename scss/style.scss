@@ -1,24 +1,54 @@
-/* $primary: #A76C3A;
-$secondary: #C48550;
-$light: #D2A075;
-$dark: #3f2b1b;
-
-$body-bg: #fae5d2;
-$body-color: #815f43;
-$body-emphasis-color: #3f2b1b; */
-
-$dark: #492f1c;
-
-$body-bg: #e2c8b5;
-$body-color: #492f1c;
-
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1140px
+  xxl: 1140px,
 );
+
+$light: #ffead0;
+$dark: #261c0f;
+$body-bg: #ffe9ce;
+$body-color: #23190dd7;
+$body-emphasis-color: #23190d;
+
+.navbar {
+  .navbar-nav {
+    .nav-link {
+      color: transparentize($color: $light, $amount: 0.4);
+    }
+    .nav-link:hover {
+      color: $light;
+    }
+    .nav-link.active {
+      color: $light;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  background: url("../assets/hero.webp") no-repeat center;
+  background-size: cover;
+  color: $light;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  p {
+    color: transparentize($color: $light, $amount: 0.15);
+  }
+}
+
+.hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.766);
+  backdrop-filter: blur(3px);
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
